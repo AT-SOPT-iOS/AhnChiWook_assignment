@@ -28,13 +28,19 @@ class WelcomeViewController: UIViewController {
         return label
     }()
     
-    private let mainButton: UIButton = {
+    private lazy var mainButton: UIButton = {
         let button = UIButton()
         button.setTitle("메인으로", for: .normal)
         button.backgroundColor = .tvingRed
         button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
         return button
     }()
+    
+    @objc
+    private func mainButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +49,11 @@ class WelcomeViewController: UIViewController {
         welcomeLabel.text = "\(id) 님 \n반가워요!"
         setUI()
         setLayout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.hidesBackButton = true
     }
     
     private func setUI() {
