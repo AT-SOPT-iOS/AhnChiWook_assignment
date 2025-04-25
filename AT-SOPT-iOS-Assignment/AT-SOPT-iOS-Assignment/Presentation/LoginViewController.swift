@@ -131,7 +131,7 @@ class LoginViewController: UIViewController {
     
     private func pushToWelcome() {
         let welcomeVC = WelcomeViewController()
-        //welcomeVC.id = idTextField.text
+        welcomeVC.id = idTextField.text
         self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
     
