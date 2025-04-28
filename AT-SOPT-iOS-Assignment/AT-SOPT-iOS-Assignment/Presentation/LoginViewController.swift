@@ -24,13 +24,14 @@ class LoginViewController: UIViewController {
         textField.placeholder = "아이디"
         textField.setPlaceholderColor(.gray2)
         textField.layer.cornerRadius = 2
+        textField.layer.borderColor = UIColor.gray2.cgColor
         textField.addLeftPadding()
         textField.clearButtonMode = .whileEditing
         textField.textColor = .gray2
         textField.font = .pretendard(.regular, size: 15)
         textField.backgroundColor = .gray4
         textField.autocapitalizationType = .none
-        textField.addTarget(self, action: #selector(canLogin), for: .editingChanged)
+        textField.addTarget(self, action: #selector(canLogin), for: .allEditingEvents)
         return textField
     }()
     
@@ -58,6 +59,7 @@ class LoginViewController: UIViewController {
         textField.placeholder = "비밀번호"
         textField.setPlaceholderColor(.gray2)
         textField.layer.cornerRadius = 2
+        textField.layer.borderColor = UIColor.gray2.cgColor
         textField.addLeftPadding()
         textField.rightView = subRightView
         textField.rightViewMode = .whileEditing
@@ -66,7 +68,7 @@ class LoginViewController: UIViewController {
         textField.font = .pretendard(.regular, size: 15)
         textField.backgroundColor = .gray4
         textField.autocapitalizationType = .none
-        textField.addTarget(self, action: #selector(canLogin), for: .editingChanged)
+        textField.addTarget(self, action: #selector(canLogin), for: .allEditingEvents)
         return textField
     }()
     
@@ -140,7 +142,6 @@ class LoginViewController: UIViewController {
         self.view.backgroundColor = .black
         setUI()
         setLayout()
-        canLogin()
         idTextField.delegate = self
         passwordTextField.delegate = self
     }
@@ -162,6 +163,7 @@ class LoginViewController: UIViewController {
     @objc
     private func clearButtonTapped() {
         passwordTextField.text = nil
+        canLogin()
     }
     
     @objc
@@ -260,15 +262,10 @@ class LoginViewController: UIViewController {
 
 }
 
-//#Preview{
-//    LoginViewController()
-//}
-
 
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderColor = UIColor.gray2.cgColor
         textField.layer.borderWidth = 1
     }
 
