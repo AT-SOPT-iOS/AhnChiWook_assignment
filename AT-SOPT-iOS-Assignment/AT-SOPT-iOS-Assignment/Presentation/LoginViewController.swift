@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         textField.font = .pretendard(.regular, size: 15)
         textField.backgroundColor = .gray4
         textField.autocapitalizationType = .none
-        textField.addTarget(self, action: #selector(canLogin), for: .allEditingEvents)
+        textField.addTarget(self, action: #selector(textFieldEditingChanged), for: .allEditingEvents)
         return textField
     }()
     
@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
         textField.font = .pretendard(.regular, size: 15)
         textField.backgroundColor = .gray4
         textField.autocapitalizationType = .none
-        textField.addTarget(self, action: #selector(canLogin), for: .allEditingEvents)
+        textField.addTarget(self, action: #selector(textFieldEditingChanged), for: .allEditingEvents)
         return textField
     }()
     
@@ -147,7 +147,22 @@ class LoginViewController: UIViewController {
     }
     
     @objc
-    private func canLogin() {
+    private func textFieldEditingChanged() {
+        updateLoginButtonState()
+    }
+    
+    @objc
+    private func clearButtonTapped() {
+        passwordTextField.text = nil
+        updateLoginButtonState()
+    }
+    
+    @objc
+    private func secureButtonTapped() {
+        passwordTextField.isSecureTextEntry.toggle()
+    }
+    
+    private func updateLoginButtonState() {
         // 두 텍스트 필드가 모두 비어있지 않은지 확인
         let isIdValid = (idTextField.text?.isEmpty == false)
         let isPasswordValid = (passwordTextField.text?.isEmpty == false)
@@ -158,17 +173,6 @@ class LoginViewController: UIViewController {
         
         // 버튼 색상 업데이트
         loginButton.backgroundColor = canLogin ? .tvingRed : .gray4
-    }
-    
-    @objc
-    private func clearButtonTapped() {
-        passwordTextField.text = nil
-        canLogin()
-    }
-    
-    @objc
-    private func secureButtonTapped() {
-        passwordTextField.isSecureTextEntry.toggle()
     }
 
     private func setUI() {
