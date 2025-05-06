@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F665FE772DBAC66C00231343 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F665FE762DBAC66C00231343 /* SnapKit */; };
+		F6D927882DC533B600D43C89 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6D927872DC533B600D43C89 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F665FE772DBAC66C00231343 /* SnapKit in Frameworks */,
+				F6D927882DC533B600D43C89 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = "AT-SOPT-iOS-Assignment";
 			packageProductDependencies = (
 				F665FE762DBAC66C00231343 /* SnapKit */,
+				F6D927872DC533B600D43C89 /* Then */,
 			);
 			productName = "AT-SOPT-iOS-Assignment";
 			productReference = F665FD812DB69E0400231343 /* AT-SOPT-iOS-Assignment.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				F665FE752DBAC66C00231343 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F6D927862DC533B600D43C89 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F665FD822DB69E0400231343 /* Products */;
@@ -350,6 +354,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		F6D927862DC533B600D43C89 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -357,6 +369,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F665FE752DBAC66C00231343 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		F6D927872DC533B600D43C89 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6D927862DC533B600D43C89 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
