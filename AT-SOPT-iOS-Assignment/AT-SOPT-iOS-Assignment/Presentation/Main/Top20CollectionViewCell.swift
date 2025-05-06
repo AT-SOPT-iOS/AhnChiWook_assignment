@@ -28,12 +28,10 @@ class Top20CollectionViewCell: UICollectionViewCell, ReuseIdentifiable {
     
     private func setUI() {
         
-        self.backgroundColor = .tvingRed
-        
         numberLabel.do {
-            //$0.font = .pretendard(.semiBold, size: 50)
             $0.textAlignment = .right
-            $0.font = .italicSystemFont(ofSize: 50)
+            $0.font = .italicSystemFont(ofSize: 25)
+            $0.textColor = .white
         }
         
     }
@@ -54,7 +52,6 @@ class Top20CollectionViewCell: UICollectionViewCell, ReuseIdentifiable {
         numberLabel.snp.makeConstraints {
             $0.trailing.equalTo(posterImage.snp.leading)
             $0.bottom.equalToSuperview()
-            $0.height.equalTo(80)
         }
         
     }
