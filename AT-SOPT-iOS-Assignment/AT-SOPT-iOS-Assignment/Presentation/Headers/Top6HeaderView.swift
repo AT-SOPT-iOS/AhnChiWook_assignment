@@ -1,18 +1,17 @@
 //
-//  Top20HeaderView.swift
+//  Top6HeaderView.swift
 //  AT-SOPT-iOS-Assignment
 //
 //  Created by 안치욱 on 5/7/25.
 //
 
-
 import UIKit
 
-final class Top20HeaderView: UICollectionReusableView, ReuseIdentifiable {
+final class Top6HeaderView: UICollectionReusableView, ReuseIdentifiable {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "오늘의 티빙 TOP 20"
+        label.text = "안치욱PD의 인생작 TOP 6"
         label.font = .pretendard(.bold, size: 15)
         label.textColor = .white
         return label
