@@ -94,10 +94,10 @@ class MainViewController: UIViewController {
         
         contentView.addSubviews(
             mainImageView,
-            top20Label,
             Top20CollectionView,
-            top6Label,
-            Top6CollectionView
+            top20Label,
+            Top6CollectionView,
+            top6Label
         )
     }
     
@@ -155,7 +155,7 @@ class MainViewController: UIViewController {
         }
         
         Top20CollectionView.snp.makeConstraints {
-            $0.top.equalTo(top20Label.snp.bottom)
+            $0.top.equalTo(mainImageView.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             //$0.bottom.equalTo(contentView.snp.bottom).offset(-16)
             
@@ -164,12 +164,12 @@ class MainViewController: UIViewController {
         }
 
         top6Label.snp.makeConstraints {
-            $0.top.equalTo(Top20CollectionView.snp.bottom)
+            $0.bottom.equalTo(Top6CollectionView.snp.top)
             $0.leading.equalToSuperview()
         }
         
         Top6CollectionView.snp.makeConstraints {
-            $0.top.equalTo(top6Label.snp.bottom)
+            $0.top.equalTo(Top20CollectionView.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             $0.bottom.equalTo(contentView.snp.bottom).offset(-16)
             
