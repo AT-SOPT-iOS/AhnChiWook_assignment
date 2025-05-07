@@ -45,6 +45,7 @@ class Top20CollectionViewCell: UICollectionViewCell, ReuseIdentifiable {
         
         posterImage.snp.makeConstraints {
             $0.trailing.equalToSuperview()
+            $0.top.equalToSuperview()
             $0.width.equalTo(98)
             $0.height.equalTo(146)
         }

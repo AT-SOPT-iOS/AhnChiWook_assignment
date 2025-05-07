@@ -15,9 +15,11 @@ class MainViewController: UIViewController {
 
     private let mainImageView = UIImageView()
     
+    private let top20Label = UILabel()
     private let top20Data = Top20Model.dummy()
     private let Top20CollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
+    private let top6Label = UILabel()
     private let myTop6Data = MyTop6Model.dummy()
     private let Top6CollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     
@@ -38,11 +40,9 @@ class MainViewController: UIViewController {
     private func register() {
         
         Top20CollectionView.register(Top20CollectionViewCell.self, forCellWithReuseIdentifier: Top20CollectionViewCell.reuseIdentifier)
-        
         Top20CollectionView.register(Top20HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Top20HeaderView.reuseIdentifier)
         
         Top6CollectionView.register(MyTop6CollectionViewCell.self, forCellWithReuseIdentifier: MyTop6CollectionViewCell.reuseIdentifier)
-        
         Top6CollectionView.register(Top6HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Top6HeaderView.reuseIdentifier)
     }
     
@@ -56,13 +56,11 @@ class MainViewController: UIViewController {
         
         let flowLayout = UICollectionViewFlowLayout()
         
-        flowLayout.itemSize = CGSize(width: 118, height: 146)
+        flowLayout.itemSize = CGSize(width: 128, height: 146)
         flowLayout.minimumLineSpacing = 12
         flowLayout.minimumInteritemSpacing = 2
         flowLayout.scrollDirection = .horizontal
-        
-        flowLayout.headerReferenceSize = CGSize(width: view.bounds.width, height: 23)
-        
+
         self.Top20CollectionView.setCollectionViewLayout(flowLayout, animated: false)
         self.Top20CollectionView.backgroundColor = .black
     }
@@ -75,8 +73,6 @@ class MainViewController: UIViewController {
         flowLayout.minimumLineSpacing = 10
         flowLayout.minimumInteritemSpacing = 5
         flowLayout.scrollDirection = .horizontal
-        
-        flowLayout.headerReferenceSize = CGSize(width: view.bounds.width, height: 5)
         
         self.Top6CollectionView.setCollectionViewLayout(flowLayout, animated: false)
         self.Top6CollectionView.backgroundColor = .black
@@ -98,7 +94,9 @@ class MainViewController: UIViewController {
         
         contentView.addSubviews(
             mainImageView,
+            top20Label,
             Top20CollectionView,
+            top6Label,
             Top6CollectionView
         )
     }
@@ -112,6 +110,18 @@ class MainViewController: UIViewController {
         
         mainImageView.do {
             $0.image = .image19
+        }
+        
+        top20Label.do {
+            $0.text = "오늘의 티빙 TOP 20"
+            $0.font = .pretendard(.bold, size: 15)
+            $0.textColor = .white
+        }
+        
+        top6Label.do {
+            $0.text = "안치욱PD의 인생작 TOP 6"
+            $0.font = .pretendard(.bold, size: 15)
+            $0.textColor = .white
         }
     }
     
@@ -139,17 +149,27 @@ class MainViewController: UIViewController {
             }
         }
         
-        Top20CollectionView.snp.makeConstraints {
+        top20Label.snp.makeConstraints {
             $0.top.equalTo(mainImageView.snp.bottom)
+            $0.leading.equalToSuperview()
+        }
+        
+        Top20CollectionView.snp.makeConstraints {
+            $0.top.equalTo(top20Label.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             //$0.bottom.equalTo(contentView.snp.bottom).offset(-16)
             
             $0.width.equalTo(contentView.snp.width)
             $0.height.equalTo(200)
         }
+
+        top6Label.snp.makeConstraints {
+            $0.top.equalTo(Top20CollectionView.snp.bottom)
+            $0.leading.equalToSuperview()
+        }
         
         Top6CollectionView.snp.makeConstraints {
-            $0.top.equalTo(Top20CollectionView.snp.bottom)
+            $0.top.equalTo(top6Label.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             $0.bottom.equalTo(contentView.snp.bottom).offset(-16)
             
@@ -162,29 +182,6 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDelegate {
     
 }
-
-//extension MainViewController: UICollectionViewDataSource {
-//    
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        
-//        return top20Data.count
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        
-//        guard let cell = Top20CollectionView.dequeueReusableCell(withReuseIdentifier: Top20CollectionViewCell.reuseIdentifier, for: indexPath) as? Top20CollectionViewCell else { return UICollectionViewCell() }
-//        cell.dataBind(top20Data[indexPath.item])
-//        return cell
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        guard kind == UICollectionView.elementKindSectionHeader else { return UICollectionReusableView() }
-//        
-//        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Top20HeaderView.reuseIdentifier,for: indexPath) as! Top20HeaderView
-//
-//        return header
-//    }
-//}
 
 extension MainViewController: UICollectionViewDataSource {
     
@@ -219,28 +216,4 @@ extension MainViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        guard kind == UICollectionView.elementKindSectionHeader else {
-            return UICollectionReusableView()
-        }
-        
-        // 첫 번째 컬렉션 뷰 (Top20)
-        if collectionView == Top20CollectionView {
-            let header = collectionView.dequeueReusableSupplementaryView(
-                ofKind: kind,
-                withReuseIdentifier: Top20HeaderView.reuseIdentifier,
-                for: indexPath) as! Top20HeaderView
-            return header
-        }
-        // 두 번째 컬렉션 뷰
-        else if collectionView == Top6CollectionView {
-            let header = collectionView.dequeueReusableSupplementaryView(
-                ofKind: kind,
-                withReuseIdentifier: Top6HeaderView.reuseIdentifier,
-                for: indexPath) as! Top6HeaderView
-            return header
-        }
-        
-        return UICollectionReusableView()
-    }
 }
