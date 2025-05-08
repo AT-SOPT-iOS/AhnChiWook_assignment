@@ -36,6 +36,13 @@
 		F6BCC6B22DCB3A7000B690F5 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6BCC6802DCB3A7000B690F5 /* Pretendard-Thin.ttf */; };
 		F6BCC6B32DCB3A7000B690F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BCC6842DCB3A7000B690F5 /* Assets.xcassets */; };
 		F6BCC6B52DCB3A7000B690F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BCC6972DCB3A7000B690F5 /* LaunchScreen.storyboard */; };
+		F6BCC6B72DCB767500B690F5 /* PopularMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6B62DCB766900B690F5 /* PopularMovieModel.swift */; };
+		F6BCC6BD2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6BB2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift */; };
+		F6BCC6BF2DCC91B500B690F5 /* KBOCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6BE2DCC91A800B690F5 /* KBOCollectionViewCell.swift */; };
+		F6BCC6C12DCC91C900B690F5 /* LeagueCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C02DCC91BB00B690F5 /* LeagueCollectionViewCell.swift */; };
+		F6BCC6C32DCC927800B690F5 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */; };
+		F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */; };
+		F6BCC6C72DCCE5DD00B690F5 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */; };
 		F6D927882DC533B600D43C89 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6D927872DC533B600D43C89 /* Then */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +77,13 @@
 		F6BCC6922DCB3A7000B690F5 /* Top20Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top20Model.swift; sourceTree = "<group>"; };
 		F6BCC6952DCB3A7000B690F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6BCC6962DCB3A7000B690F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6BCC6B62DCB766900B690F5 /* PopularMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieModel.swift; sourceTree = "<group>"; };
+		F6BCC6BB2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6BCC6BE2DCC91A800B690F5 /* KBOCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBOCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6BCC6C02DCC91BB00B690F5 /* LeagueCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBOModel.swift; sourceTree = "<group>"; };
+		F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +191,7 @@
 		F6BCC6902DCB3A7000B690F5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F6BCC68C2DCB3A7000B690F5 /* LiveCollectionViewCell.swift */,
 				F6BCC68D2DCB3A7000B690F5 /* MainViewController.swift */,
-				F6BCC68E2DCB3A7000B690F5 /* MyTop6CollectionViewCell.swift */,
-				F6BCC68F2DCB3A7000B690F5 /* Top20CollectionViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -188,6 +199,10 @@
 		F6BCC6932DCB3A7000B690F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */,
+				F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */,
+				F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */,
+				F6BCC6B62DCB766900B690F5 /* PopularMovieModel.swift */,
 				F6BCC6912DCB3A7000B690F5 /* MyTop6Model.swift */,
 				F6BCC6922DCB3A7000B690F5 /* Top20Model.swift */,
 			);
@@ -201,6 +216,7 @@
 				F6BCC68B2DCB3A7000B690F5 /* Login */,
 				F6BCC6902DCB3A7000B690F5 /* Main */,
 				F6BCC6932DCB3A7000B690F5 /* Models */,
+				F6BCC6BC2DCC919200B690F5 /* Cell */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -215,6 +231,19 @@
 				F6BCC6972DCB3A7000B690F5 /* LaunchScreen.storyboard */,
 			);
 			path = "AT-SOPT-iOS-Assignment";
+			sourceTree = "<group>";
+		};
+		F6BCC6BC2DCC919200B690F5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCC6C02DCC91BB00B690F5 /* LeagueCollectionViewCell.swift */,
+				F6BCC6BE2DCC91A800B690F5 /* KBOCollectionViewCell.swift */,
+				F6BCC6BB2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift */,
+				F6BCC68C2DCB3A7000B690F5 /* LiveCollectionViewCell.swift */,
+				F6BCC68E2DCB3A7000B690F5 /* MyTop6CollectionViewCell.swift */,
+				F6BCC68F2DCB3A7000B690F5 /* Top20CollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,20 +336,27 @@
 			files = (
 				F6BCC6992DCB3A7000B690F5 /* AppDelegate.swift in Sources */,
 				F6BCC69A2DCB3A7000B690F5 /* SceneDelegate.swift in Sources */,
+				F6BCC6C32DCC927800B690F5 /* LeagueModel.swift in Sources */,
 				F6BCC69B2DCB3A7000B690F5 /* UIButton+.swift in Sources */,
 				F6BCC69C2DCB3A7000B690F5 /* UIFont+.swift in Sources */,
 				F6BCC69D2DCB3A7000B690F5 /* UITextField+.swift in Sources */,
 				F6BCC69E2DCB3A7000B690F5 /* UIView+.swift in Sources */,
+				F6BCC6B72DCB767500B690F5 /* PopularMovieModel.swift in Sources */,
+				F6BCC6BD2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift in Sources */,
 				F6BCC69F2DCB3A7000B690F5 /* ReuseIdentifiable.swift in Sources */,
 				F6BCC6A02DCB3A7000B690F5 /* Top6HeaderView.swift in Sources */,
 				F6BCC6A12DCB3A7000B690F5 /* Top20HeaderView.swift in Sources */,
 				F6BCC6A22DCB3A7000B690F5 /* LoginViewController.swift in Sources */,
 				F6BCC6A32DCB3A7000B690F5 /* WelcomeViewController.swift in Sources */,
+				F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */,
 				F6BCC6A42DCB3A7000B690F5 /* LiveCollectionViewCell.swift in Sources */,
 				F6BCC6A52DCB3A7000B690F5 /* MainViewController.swift in Sources */,
 				F6BCC6A62DCB3A7000B690F5 /* MyTop6CollectionViewCell.swift in Sources */,
 				F6BCC6A72DCB3A7000B690F5 /* Top20CollectionViewCell.swift in Sources */,
+				F6BCC6C72DCCE5DD00B690F5 /* LiveModel.swift in Sources */,
+				F6BCC6BF2DCC91B500B690F5 /* KBOCollectionViewCell.swift in Sources */,
 				F6BCC6A82DCB3A7000B690F5 /* MyTop6Model.swift in Sources */,
+				F6BCC6C12DCC91C900B690F5 /* LeagueCollectionViewCell.swift in Sources */,
 				F6BCC6A92DCB3A7000B690F5 /* Top20Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
