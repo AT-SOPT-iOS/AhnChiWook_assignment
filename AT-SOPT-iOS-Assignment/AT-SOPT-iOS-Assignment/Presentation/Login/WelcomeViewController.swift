@@ -31,6 +31,7 @@ class WelcomeViewController: UIViewController {
     private lazy var mainButton: UIButton = {
         let button = UIButton()
         button.setTitle("메인으로", for: .normal)
+        button.layer.cornerRadius = 6
         button.backgroundColor = .tvingRed
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
@@ -64,6 +65,7 @@ class WelcomeViewController: UIViewController {
             mainButton
         )
     }
+    
     private func setLayout() {
         imageView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(14)

@@ -44,6 +44,7 @@ class LiveCollectionViewCell: UICollectionViewCell, ReuseIdentifiable {
             $0.textAlignment = .left
             $0.font = .pretendard(.medium, size: 10)
             $0.textColor = .gray2
+            $0.numberOfLines = 2
         }
         
     }
@@ -64,18 +65,18 @@ class LiveCollectionViewCell: UICollectionViewCell, ReuseIdentifiable {
         }
         
         numberLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(5)
+            $0.leading.equalToSuperview().offset(2)
             $0.top.equalTo(posterImage.snp.bottom).offset(5)
         }
         
         programName.snp.makeConstraints {
             $0.top.equalTo(posterImage.snp.bottom).offset(5)
-            $0.leading.equalTo(numberLabel.snp.trailing).offset(2)
+            $0.leading.equalTo(numberLabel.snp.trailing).offset(5)
         }
         
         detailLabel.snp.makeConstraints {
             $0.top.equalTo(programName.snp.bottom)
-            $0.leading.equalTo(numberLabel.snp.trailing).offset(2)
+            $0.leading.equalTo(numberLabel.snp.trailing).offset(5)
         }
         
     }

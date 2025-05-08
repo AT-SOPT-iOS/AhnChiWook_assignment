@@ -45,6 +45,14 @@ class MainViewController: UIViewController {
     private let myTop6Data = MyTop6Model.dummy()
     private let Top6CollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
+    private let announceView = UIView()
+    private let announceLabel = UILabel()
+    private let detailLabel = UILabel()
+    private let detailButton = UIButton()
+    
+    private let serviceLabel = UILabel()
+    private let privacyLabel = UILabel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +64,10 @@ class MainViewController: UIViewController {
         setLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.hidesBackButton = true
+    }
     
     private func register() {
         Top20CollectionView.register(Top20CollectionViewCell.self, forCellWithReuseIdentifier: Top20CollectionViewCell.reuseIdentifier)
@@ -169,8 +181,13 @@ class MainViewController: UIViewController {
             KBOCollectionView,
             LeagueCollectionView,
             Top6CollectionView,
-            top6Label
+            top6Label,
+            announceView,
+            serviceLabel,
+            privacyLabel
         )
+        
+        announceView.addSubviews(announceLabel, detailLabel, detailButton)
     }
     
     private func setUI() {
@@ -238,6 +255,42 @@ class MainViewController: UIViewController {
             $0.font = .pretendard(.bold, size: 15)
             $0.textColor = .white
         }
+        
+        announceView.do {
+            $0.layer.cornerRadius = 4
+            $0.backgroundColor = .gray4
+        }
+        
+        announceLabel.do {
+            $0.text = "공지"
+            $0.font = .pretendard(.medium, size: 11)
+            $0.textColor = .gray2
+        }
+        
+        detailLabel.do {
+            $0.text = "티빙 계정 공유 정책 추가 안내"
+            $0.font = .pretendard(.medium, size: 11)
+            $0.textColor = .white
+        }
+        
+        detailButton.do {
+            $0.setImage(.btnBefore, for: .normal)
+            $0.backgroundColor = .clear
+        }
+        
+        serviceLabel.do {
+            $0.text = "고객문의  ·  이용약관  · \n사업자정보  ·  인재채용"
+            $0.font = .pretendard(.medium, size: 11)
+            $0.textColor = .gray2
+            $0.numberOfLines = 2
+        }
+        
+        privacyLabel.do {
+            $0.text = "개인정보처리방침"
+            $0.font = .pretendard(.medium, size: 11)
+            $0.textColor = .white
+        }
+        
     }
     
     private func setLayout() {
@@ -306,7 +359,7 @@ class MainViewController: UIViewController {
             $0.top.equalTo(liveLabel.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             $0.width.equalTo(contentView.snp.width)
-            $0.height.equalTo(140)
+            $0.height.equalTo(160)
         }
         
         popMovieLabel.snp.makeConstraints {
@@ -343,9 +396,40 @@ class MainViewController: UIViewController {
         Top6CollectionView.snp.makeConstraints {
             $0.top.equalTo(top6Label.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
-            $0.bottom.equalTo(contentView.snp.bottom).offset(-16)
             $0.width.equalTo(contentView.snp.width)
             $0.height.equalTo(120)
+        }
+        
+        announceView.snp.makeConstraints {
+            $0.top.equalTo(Top6CollectionView.snp.bottom)
+            $0.horizontalEdges.equalToSuperview().inset(14)
+            $0.bottom.equalToSuperview().offset(-70)
+            $0.height.equalTo(50)
+        }
+        
+        announceLabel.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.leading.equalToSuperview().offset(17)
+        }
+        
+        detailLabel.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.leading.equalTo(announceLabel.snp.trailing).offset(10)
+        }
+        
+        detailButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(16)
+        }
+        
+        serviceLabel.snp.makeConstraints {
+            $0.leading.equalToSuperview().inset(20)
+            $0.top.equalTo(announceView.snp.bottom).offset(13)
+        }
+        
+        privacyLabel.snp.makeConstraints {
+            $0.top.equalTo(announceView.snp.bottom).offset(13)
+            $0.leading.equalTo(serviceLabel.snp.trailing).offset(3)
         }
     }
 }
@@ -421,14 +505,4 @@ extension MainViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
-}
-extension UIImage {
-    convenience init(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(CGRect(origin: .zero, size: size))
-        let img = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        self.init(cgImage: img.cgImage!)
-    }
 }
