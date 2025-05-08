@@ -12,6 +12,14 @@ class MainViewController: UIViewController {
     private let scrollView = UIScrollView()
     
     private let contentView = UIView()
+    
+    private let segmentControl = UISegmentedControl()
+    
+    private let tvingImage = UIImageView()
+    
+    private let searchButton = UIButton()
+    
+    private let profileIcon = UIImageView()
 
     private let mainImageView = UIImageView()
     
@@ -143,11 +151,14 @@ class MainViewController: UIViewController {
     }
     
     private func setHierarchy() {
-        view.addSubview(scrollView)
+        view.addSubviews(scrollView, segmentControl)
         
         scrollView.addSubview(contentView)
         
         contentView.addSubviews(
+            tvingImage,
+            searchButton,
+            profileIcon,
             mainImageView,
             Top20CollectionView,
             top20Label,
@@ -167,6 +178,37 @@ class MainViewController: UIViewController {
         scrollView.do {
             $0.contentInsetAdjustmentBehavior = .never
             $0.showsVerticalScrollIndicator = true
+        }
+        
+        segmentControl.do {
+            $0.setTitleTextAttributes([
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.font: UIFont.pretendard(.regular, size: 17)
+            ], for: .normal)
+           
+            $0.backgroundColor = .black
+            $0.setDividerImage(UIImage(), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
+            $0.selectedSegmentTintColor = .clear
+            $0.insertSegment(withTitle: "홈", at: 0, animated: true)
+            $0.insertSegment(withTitle: "드라마", at: 1, animated: true)
+            $0.insertSegment(withTitle: "예능", at: 2, animated: true)
+            $0.insertSegment(withTitle: "영화", at: 3, animated: true)
+            $0.insertSegment(withTitle: "스포츠", at: 4, animated: true)
+            $0.insertSegment(withTitle: "뉴스", at: 5, animated: true)
+            $0.selectedSegmentIndex = 0
+        }
+        
+        tvingImage.do {
+            $0.image = .tving2
+        }
+        
+        searchButton.do {
+            $0.setImage(.search, for: .normal)
+            $0.backgroundColor = .clear
+        }
+        
+        profileIcon.do {
+            $0.image = .profile
         }
         
         mainImageView.do {
@@ -201,8 +243,14 @@ class MainViewController: UIViewController {
     private func setLayout() {
         
         scrollView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.top.equalTo(view.snp.top).offset(35)
             $0.leading.trailing.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
+        
+        segmentControl.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.horizontalEdges.equalToSuperview()
+            $0.height.equalTo(40)
         }
         
         contentView.snp.makeConstraints {
@@ -211,8 +259,23 @@ class MainViewController: UIViewController {
             $0.height.greaterThanOrEqualToSuperview().priority(.low)
         }
         
-        mainImageView.snp.makeConstraints {
+        tvingImage.snp.makeConstraints {
             $0.top.equalTo(contentView.snp.top)
+            $0.leading.equalToSuperview()
+        }
+        
+        profileIcon.snp.makeConstraints {
+            $0.centerY.equalTo(tvingImage.snp.centerY)
+            $0.trailing.equalToSuperview().offset(-10)
+        }
+        
+        searchButton.snp.makeConstraints {
+            $0.centerY.equalTo(tvingImage.snp.centerY)
+            $0.trailing.equalTo(profileIcon.snp.leading).offset(-10)
+        }
+        
+        mainImageView.snp.makeConstraints {
+            $0.top.equalTo(tvingImage.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             if let img = mainImageView.image {
                 let aspect = img.size.height / img.size.width
@@ -259,7 +322,7 @@ class MainViewController: UIViewController {
         }
         
         KBOCollectionView.snp.makeConstraints {
-            $0.top.equalTo(PopMovieCollectionView.snp.bottom).offset(15)
+            $0.top.equalTo(PopMovieCollectionView.snp.bottom).offset(20)
             $0.horizontalEdges.equalToSuperview()
             $0.width.equalTo(contentView.snp.width)
             $0.height.equalTo(50)
@@ -358,4 +421,14 @@ extension MainViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
+}
+extension UIImage {
+    convenience init(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        color.setFill()
+        UIRectFill(CGRect(origin: .zero, size: size))
+        let img = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        self.init(cgImage: img.cgImage!)
+    }
 }

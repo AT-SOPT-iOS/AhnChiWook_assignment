@@ -39,7 +39,8 @@ class WelcomeViewController: UIViewController {
     
     @objc
     private func mainButtonTapped() {
-        self.navigationController?.popViewController(animated: true)
+        let mainVC = MainViewController()
+        self.navigationController?.pushViewController(mainVC, animated: true)
     }
     
     override func viewDidLoad() {
