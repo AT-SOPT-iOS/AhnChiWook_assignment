@@ -43,6 +43,8 @@
 		F6BCC6C32DCC927800B690F5 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */; };
 		F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */; };
 		F6BCC6C72DCCE5DD00B690F5 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */; };
+		F6BCC6C92DCD8D1000B690F5 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */; };
+		F6BCC6CB2DCDE8AB00B690F5 /* APIMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */; };
 		F6D927882DC533B600D43C89 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6D927872DC533B600D43C89 /* Then */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBOModel.swift; sourceTree = "<group>"; };
 		F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 		F6BCC6902DCB3A7000B690F5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */,
 				F6BCC68D2DCB3A7000B690F5 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -199,6 +204,7 @@
 		F6BCC6932DCB3A7000B690F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */,
 				F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */,
 				F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */,
 				F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */,
@@ -350,6 +356,7 @@
 				F6BCC6A32DCB3A7000B690F5 /* WelcomeViewController.swift in Sources */,
 				F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */,
 				F6BCC6A42DCB3A7000B690F5 /* LiveCollectionViewCell.swift in Sources */,
+				F6BCC6C92DCD8D1000B690F5 /* MovieViewController.swift in Sources */,
 				F6BCC6A52DCB3A7000B690F5 /* MainViewController.swift in Sources */,
 				F6BCC6A62DCB3A7000B690F5 /* MyTop6CollectionViewCell.swift in Sources */,
 				F6BCC6A72DCB3A7000B690F5 /* Top20CollectionViewCell.swift in Sources */,
@@ -358,6 +365,7 @@
 				F6BCC6A82DCB3A7000B690F5 /* MyTop6Model.swift in Sources */,
 				F6BCC6C12DCC91C900B690F5 /* LeagueCollectionViewCell.swift in Sources */,
 				F6BCC6A92DCB3A7000B690F5 /* Top20Model.swift in Sources */,
+				F6BCC6CB2DCDE8AB00B690F5 /* APIMovieModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
