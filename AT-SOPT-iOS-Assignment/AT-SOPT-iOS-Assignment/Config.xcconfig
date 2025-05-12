@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  AT-SOPT-iOS-Assignment
+//
+//  Created by 안치욱 on 5/12/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+APIkey = 30e1b39a000b453e6183a0ba337ddb2e
