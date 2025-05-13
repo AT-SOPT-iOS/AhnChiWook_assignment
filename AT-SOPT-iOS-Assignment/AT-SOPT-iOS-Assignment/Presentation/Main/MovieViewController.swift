@@ -28,12 +28,22 @@ class MovieViewController: UIViewController {
         $0.maximumDate = .now
     }
     
+    private let imageView = UIImageView().then {
+        $0.image = ._201508171755545954
+    }
+    
     private lazy var searchButton = UIButton().then {
         $0.setTitle("검색", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.backgroundColor = .systemGreen
         $0.layer.cornerRadius = 8
         $0.addTarget(self, action: #selector(didTapSearch), for: .touchUpInside)
+    }
+    
+    private let descLabel = UILabel().then {
+        $0.text = "의 박스오피스~!"
+        $0.font = .pretendard(.medium, size: 25)
+        $0.textColor = .black
     }
     
     override func viewDidLoad() {
@@ -73,7 +83,7 @@ class MovieViewController: UIViewController {
     }
     
     private func setHierarchy() {
-        view.addSubviews(dateTextField, searchButton)
+        view.addSubviews(dateTextField, searchButton, descLabel, imageView)
     }
 
     private func setLayout() {
@@ -87,6 +97,16 @@ class MovieViewController: UIViewController {
             $0.bottom.equalToSuperview().offset(-55)
             $0.height.equalTo(45)
             $0.leading.trailing.equalToSuperview().inset(50)
+        }
+        descLabel.snp.makeConstraints {
+            $0.leading.equalTo(dateTextField.snp.trailing).offset(3)
+            $0.centerY.equalTo(dateTextField.snp.centerY)
+            $0.height.equalTo(45)
+            $0.trailing.equalToSuperview().inset(5)
+        }
+        imageView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview().offset(15)
         }
         
         setToolBar()
