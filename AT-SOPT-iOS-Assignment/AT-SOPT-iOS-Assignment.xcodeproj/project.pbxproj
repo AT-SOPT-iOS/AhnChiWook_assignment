@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6659BC12DD1B42A0018B574 /* APIMovieTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659BC02DD1B41E0018B574 /* APIMovieTabelViewCell.swift */; };
+		F6659BC32DD1F6940018B574 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659BC22DD1F6880018B574 /* SearchResultViewController.swift */; };
+		F6659BCC2DD1F8B10018B574 /* BoxOfficeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659BCB2DD1F8A90018B574 /* BoxOfficeService.swift */; };
+		F6659BCE2DD1F9640018B574 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6659BCD2DD1F9640018B574 /* Config.xcconfig */; };
 		F665FE772DBAC66C00231343 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F665FE762DBAC66C00231343 /* SnapKit */; };
 		F6BCC6992DCB3A7000B690F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6702DCB3A7000B690F5 /* AppDelegate.swift */; };
 		F6BCC69A2DCB3A7000B690F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6712DCB3A7000B690F5 /* SceneDelegate.swift */; };
@@ -43,10 +47,16 @@
 		F6BCC6C32DCC927800B690F5 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */; };
 		F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */; };
 		F6BCC6C72DCCE5DD00B690F5 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */; };
+		F6BCC6C92DCD8D1000B690F5 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */; };
+		F6BCC6CB2DCDE8AB00B690F5 /* APIMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */; };
 		F6D927882DC533B600D43C89 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6D927872DC533B600D43C89 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6659BC02DD1B41E0018B574 /* APIMovieTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovieTabelViewCell.swift; sourceTree = "<group>"; };
+		F6659BC22DD1F6880018B574 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		F6659BCB2DD1F8A90018B574 /* BoxOfficeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeService.swift; sourceTree = "<group>"; };
+		F6659BCD2DD1F9640018B574 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F665FD812DB69E0400231343 /* AT-SOPT-iOS-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT-SOPT-iOS-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BCC6702DCB3A7000B690F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BCC6712DCB3A7000B690F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +94,8 @@
 		F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBOModel.swift; sourceTree = "<group>"; };
 		F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6659BC42DD1F8590018B574 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F6659BCB2DD1F8A90018B574 /* BoxOfficeService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F665FD782DB69E0400231343 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +211,8 @@
 		F6BCC6902DCB3A7000B690F5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F6659BC22DD1F6880018B574 /* SearchResultViewController.swift */,
+				F6BCC6C82DCD8D0400B690F5 /* MovieViewController.swift */,
 				F6BCC68D2DCB3A7000B690F5 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -199,6 +221,7 @@
 		F6BCC6932DCB3A7000B690F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6BCC6CA2DCDE8A000B690F5 /* APIMovieModel.swift */,
 				F6BCC6C62DCCE5C900B690F5 /* LiveModel.swift */,
 				F6BCC6C42DCC9C0400B690F5 /* KBOModel.swift */,
 				F6BCC6C22DCC927400B690F5 /* LeagueModel.swift */,
@@ -212,6 +235,7 @@
 		F6BCC6942DCB3A7000B690F5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6659BC42DD1F8590018B574 /* Network */,
 				F6BCC6882DCB3A7000B690F5 /* Headers */,
 				F6BCC68B2DCB3A7000B690F5 /* Login */,
 				F6BCC6902DCB3A7000B690F5 /* Main */,
@@ -229,6 +253,7 @@
 				F6BCC6942DCB3A7000B690F5 /* Presentation */,
 				F6BCC6952DCB3A7000B690F5 /* Info.plist */,
 				F6BCC6972DCB3A7000B690F5 /* LaunchScreen.storyboard */,
+				F6659BCD2DD1F9640018B574 /* Config.xcconfig */,
 			);
 			path = "AT-SOPT-iOS-Assignment";
 			sourceTree = "<group>";
@@ -236,6 +261,7 @@
 		F6BCC6BC2DCC919200B690F5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F6659BC02DD1B41E0018B574 /* APIMovieTabelViewCell.swift */,
 				F6BCC6C02DCC91BB00B690F5 /* LeagueCollectionViewCell.swift */,
 				F6BCC6BE2DCC91A800B690F5 /* KBOCollectionViewCell.swift */,
 				F6BCC6BB2DCC919200B690F5 /* PopularMovieCollectionViewCell.swift */,
@@ -317,6 +343,7 @@
 				F6BCC6AB2DCB3A7000B690F5 /* Pretendard-Bold.ttf in Resources */,
 				F6BCC6AC2DCB3A7000B690F5 /* Pretendard-ExtraBold.ttf in Resources */,
 				F6BCC6AD2DCB3A7000B690F5 /* Pretendard-ExtraLight.ttf in Resources */,
+				F6659BCE2DD1F9640018B574 /* Config.xcconfig in Resources */,
 				F6BCC6AE2DCB3A7000B690F5 /* Pretendard-Light.ttf in Resources */,
 				F6BCC6AF2DCB3A7000B690F5 /* Pretendard-Medium.ttf in Resources */,
 				F6BCC6B02DCB3A7000B690F5 /* Pretendard-Regular.ttf in Resources */,
@@ -339,6 +366,7 @@
 				F6BCC6C32DCC927800B690F5 /* LeagueModel.swift in Sources */,
 				F6BCC69B2DCB3A7000B690F5 /* UIButton+.swift in Sources */,
 				F6BCC69C2DCB3A7000B690F5 /* UIFont+.swift in Sources */,
+				F6659BCC2DD1F8B10018B574 /* BoxOfficeService.swift in Sources */,
 				F6BCC69D2DCB3A7000B690F5 /* UITextField+.swift in Sources */,
 				F6BCC69E2DCB3A7000B690F5 /* UIView+.swift in Sources */,
 				F6BCC6B72DCB767500B690F5 /* PopularMovieModel.swift in Sources */,
@@ -350,14 +378,18 @@
 				F6BCC6A32DCB3A7000B690F5 /* WelcomeViewController.swift in Sources */,
 				F6BCC6C52DCC9C0900B690F5 /* KBOModel.swift in Sources */,
 				F6BCC6A42DCB3A7000B690F5 /* LiveCollectionViewCell.swift in Sources */,
+				F6BCC6C92DCD8D1000B690F5 /* MovieViewController.swift in Sources */,
 				F6BCC6A52DCB3A7000B690F5 /* MainViewController.swift in Sources */,
 				F6BCC6A62DCB3A7000B690F5 /* MyTop6CollectionViewCell.swift in Sources */,
 				F6BCC6A72DCB3A7000B690F5 /* Top20CollectionViewCell.swift in Sources */,
 				F6BCC6C72DCCE5DD00B690F5 /* LiveModel.swift in Sources */,
 				F6BCC6BF2DCC91B500B690F5 /* KBOCollectionViewCell.swift in Sources */,
+				F6659BC32DD1F6940018B574 /* SearchResultViewController.swift in Sources */,
 				F6BCC6A82DCB3A7000B690F5 /* MyTop6Model.swift in Sources */,
 				F6BCC6C12DCC91C900B690F5 /* LeagueCollectionViewCell.swift in Sources */,
 				F6BCC6A92DCB3A7000B690F5 /* Top20Model.swift in Sources */,
+				F6BCC6CB2DCDE8AB00B690F5 /* APIMovieModel.swift in Sources */,
+				F6659BC12DD1B42A0018B574 /* APIMovieTabelViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +461,7 @@
 		};
 		F665FD972DB69E0600231343 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6659BCD2DD1F9640018B574 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

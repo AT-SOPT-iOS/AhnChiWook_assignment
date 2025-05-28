@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Then
 
 class WelcomeViewController: UIViewController {
 
@@ -38,10 +39,23 @@ class WelcomeViewController: UIViewController {
         return button
     }()
     
+    private lazy var movieButton = UIButton().then {
+        $0.setTitle("실시간 영화 정보", for: .normal)
+        $0.layer.cornerRadius = 6
+        $0.backgroundColor = .tvingRed
+        $0.setTitleColor(.white, for: .normal)
+        $0.addTarget(self, action: #selector(movieButtonTapped), for: .touchUpInside)
+    }
+    
     @objc
     private func mainButtonTapped() {
         let mainVC = MainViewController()
         self.navigationController?.pushViewController(mainVC, animated: true)
+    }
+    
+    @objc private func movieButtonTapped() {
+        let movieVC = MovieViewController()
+        self.navigationController?.pushViewController(movieVC, animated: true)
     }
     
     override func viewDidLoad() {
@@ -62,7 +76,8 @@ class WelcomeViewController: UIViewController {
         view.addSubviews(
             imageView,
             welcomeLabel,
-            mainButton
+            mainButton,
+            movieButton
         )
     }
     
@@ -77,7 +92,12 @@ class WelcomeViewController: UIViewController {
             $0.centerX.equalToSuperview()
         }
         mainButton.snp.makeConstraints {
-            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(11)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            $0.horizontalEdges.equalToSuperview().inset(20)
+            $0.height.equalTo(52)
+        }
+        movieButton.snp.makeConstraints {
+            $0.bottom.equalTo(mainButton.snp.top).offset(-30)
             $0.horizontalEdges.equalToSuperview().inset(20)
             $0.height.equalTo(52)
         }
