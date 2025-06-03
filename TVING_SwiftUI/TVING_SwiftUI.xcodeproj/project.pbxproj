@@ -6,20 +6,64 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F68133332DEDD4C40056DCBD /* Top20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133322DEDD4C00056DCBD /* Top20View.swift */; };
+		F681333E2DEDD8350056DCBD /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133382DEDD8350056DCBD /* Pretendard-Light.ttf */; };
+		F681333F2DEDD8350056DCBD /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133342DEDD8350056DCBD /* Pretendard-Black.ttf */; };
+		F68133402DEDD8350056DCBD /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133362DEDD8350056DCBD /* Pretendard-ExtraBold.ttf */; };
+		F68133412DEDD8350056DCBD /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F681333A2DEDD8350056DCBD /* Pretendard-Regular.ttf */; };
+		F68133422DEDD8350056DCBD /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F681333C2DEDD8350056DCBD /* Pretendard-Thin.ttf */; };
+		F68133432DEDD8350056DCBD /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133372DEDD8350056DCBD /* Pretendard-ExtraLight.ttf */; };
+		F68133442DEDD8350056DCBD /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F681333B2DEDD8350056DCBD /* Pretendard-SemiBold.ttf */; };
+		F68133452DEDD8350056DCBD /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133352DEDD8350056DCBD /* Pretendard-Bold.ttf */; };
+		F68133462DEDD8350056DCBD /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68133392DEDD8350056DCBD /* Pretendard-Medium.ttf */; };
+		F68133492DEEBFA60056DCBD /* Top20Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133482DEEBF9F0056DCBD /* Top20Model.swift */; };
+		F681334B2DEED08E0056DCBD /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681334A2DEED08E0056DCBD /* LiveModel.swift */; };
+		F681334D2DEED5160056DCBD /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681334C2DEED5160056DCBD /* LiveView.swift */; };
+		F681334F2DEED8E20056DCBD /* PopularMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681334E2DEED8E20056DCBD /* PopularMovieModel.swift */; };
+		F68133512DEED9970056DCBD /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133502DEED9970056DCBD /* PopularMovieView.swift */; };
+		F68133532DEEDE200056DCBD /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133522DEEDE200056DCBD /* TeamModel.swift */; };
+		F68133552DEEDF4A0056DCBD /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133542DEEDF4A0056DCBD /* TeamListView.swift */; };
+		F68133572DEEF7100056DCBD /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133562DEEF7100056DCBD /* ServiceModel.swift */; };
+		F68133592DEEF79A0056DCBD /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133582DEEF79A0056DCBD /* ServiceListView.swift */; };
+		F681335B2DEEF8DB0056DCBD /* Top6Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681335A2DEEF8D50056DCBD /* Top6Model.swift */; };
+		F6C332522DE7023100B8A2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C3324E2DE7023100B8A2D5 /* Assets.xcassets */; };
+		F6C332532DE7023100B8A2D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3324F2DE7023100B8A2D5 /* ContentView.swift */; };
+		F6C332542DE7023100B8A2D5 /* TVING_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332502DE7023100B8A2D5 /* TVING_SwiftUIApp.swift */; };
+		F6C332582DE70BC400B8A2D5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332572DE70BC000B8A2D5 /* HeaderView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		F6C332292DE6FC9500B8A2D5 /* TVING_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVING_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68133322DEDD4C00056DCBD /* Top20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top20View.swift; sourceTree = "<group>"; };
+		F68133342DEDD8350056DCBD /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		F68133352DEDD8350056DCBD /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		F68133362DEDD8350056DCBD /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F68133372DEDD8350056DCBD /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F68133382DEDD8350056DCBD /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		F68133392DEDD8350056DCBD /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		F681333A2DEDD8350056DCBD /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		F681333B2DEDD8350056DCBD /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		F681333C2DEDD8350056DCBD /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		F68133472DEDDCFF0056DCBD /* TVING-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TVING-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F68133482DEEBF9F0056DCBD /* Top20Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top20Model.swift; sourceTree = "<group>"; };
+		F681334A2DEED08E0056DCBD /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		F681334C2DEED5160056DCBD /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		F681334E2DEED8E20056DCBD /* PopularMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieModel.swift; sourceTree = "<group>"; };
+		F68133502DEED9970056DCBD /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		F68133522DEEDE200056DCBD /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		F68133542DEEDF4A0056DCBD /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
+		F68133562DEEF7100056DCBD /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		F68133582DEEF79A0056DCBD /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
+		F681335A2DEEF8D50056DCBD /* Top6Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top6Model.swift; sourceTree = "<group>"; };
+		F6C332402DE700EB00B8A2D5 /* TVING_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVING_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3324E2DE7023100B8A2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6C3324F2DE7023100B8A2D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6C332502DE7023100B8A2D5 /* TVING_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVING_SwiftUIApp.swift; sourceTree = "<group>"; };
+		F6C332572DE70BC000B8A2D5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F6C3322B2DE6FC9500B8A2D5 /* TVING_SwiftUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TVING_SwiftUI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		F6C332262DE6FC9500B8A2D5 /* Frameworks */ = {
+		F6C3323D2DE700EB00B8A2D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,103 +73,180 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6C332202DE6FC9500B8A2D5 = {
+		F681333D2DEDD8350056DCBD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F6C3322B2DE6FC9500B8A2D5 /* TVING_SwiftUI */,
-				F6C3322A2DE6FC9500B8A2D5 /* Products */,
+				F68133342DEDD8350056DCBD /* Pretendard-Black.ttf */,
+				F68133352DEDD8350056DCBD /* Pretendard-Bold.ttf */,
+				F68133362DEDD8350056DCBD /* Pretendard-ExtraBold.ttf */,
+				F68133372DEDD8350056DCBD /* Pretendard-ExtraLight.ttf */,
+				F68133382DEDD8350056DCBD /* Pretendard-Light.ttf */,
+				F68133392DEDD8350056DCBD /* Pretendard-Medium.ttf */,
+				F681333A2DEDD8350056DCBD /* Pretendard-Regular.ttf */,
+				F681333B2DEDD8350056DCBD /* Pretendard-SemiBold.ttf */,
+				F681333C2DEDD8350056DCBD /* Pretendard-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F6C332372DE700EB00B8A2D5 = {
+			isa = PBXGroup;
+			children = (
+				F6C332512DE7023100B8A2D5 /* TVING_SwiftUI */,
+				F6C332412DE700EB00B8A2D5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6C3322A2DE6FC9500B8A2D5 /* Products */ = {
+		F6C332412DE700EB00B8A2D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6C332292DE6FC9500B8A2D5 /* TVING_SwiftUI.app */,
+				F6C332402DE700EB00B8A2D5 /* TVING_SwiftUI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C332512DE7023100B8A2D5 /* TVING_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F68133472DEDDCFF0056DCBD /* TVING-SwiftUI-Info.plist */,
+				F6C332562DE7055B00B8A2D5 /* View */,
+				F6C332552DE7053500B8A2D5 /* Model */,
+				F6C3324E2DE7023100B8A2D5 /* Assets.xcassets */,
+				F6C332502DE7023100B8A2D5 /* TVING_SwiftUIApp.swift */,
+				F681333D2DEDD8350056DCBD /* Fonts */,
+			);
+			path = TVING_SwiftUI;
+			sourceTree = "<group>";
+		};
+		F6C332552DE7053500B8A2D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F681335A2DEEF8D50056DCBD /* Top6Model.swift */,
+				F68133562DEEF7100056DCBD /* ServiceModel.swift */,
+				F68133522DEEDE200056DCBD /* TeamModel.swift */,
+				F681334E2DEED8E20056DCBD /* PopularMovieModel.swift */,
+				F681334A2DEED08E0056DCBD /* LiveModel.swift */,
+				F68133482DEEBF9F0056DCBD /* Top20Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6C332562DE7055B00B8A2D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F68133582DEEF79A0056DCBD /* ServiceListView.swift */,
+				F68133542DEEDF4A0056DCBD /* TeamListView.swift */,
+				F68133502DEED9970056DCBD /* PopularMovieView.swift */,
+				F681334C2DEED5160056DCBD /* LiveView.swift */,
+				F68133322DEDD4C00056DCBD /* Top20View.swift */,
+				F6C332572DE70BC000B8A2D5 /* HeaderView.swift */,
+				F6C3324F2DE7023100B8A2D5 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6C332282DE6FC9500B8A2D5 /* TVING_SwiftUI */ = {
+		F6C3323F2DE700EB00B8A2D5 /* TVING_SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6C332342DE6FC9700B8A2D5 /* Build configuration list for PBXNativeTarget "TVING_SwiftUI" */;
+			buildConfigurationList = F6C3324B2DE700EE00B8A2D5 /* Build configuration list for PBXNativeTarget "TVING_SwiftUI" */;
 			buildPhases = (
-				F6C332252DE6FC9500B8A2D5 /* Sources */,
-				F6C332262DE6FC9500B8A2D5 /* Frameworks */,
-				F6C332272DE6FC9500B8A2D5 /* Resources */,
+				F6C3323C2DE700EB00B8A2D5 /* Sources */,
+				F6C3323D2DE700EB00B8A2D5 /* Frameworks */,
+				F6C3323E2DE700EB00B8A2D5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F6C3322B2DE6FC9500B8A2D5 /* TVING_SwiftUI */,
-			);
 			name = TVING_SwiftUI;
 			packageProductDependencies = (
 			);
 			productName = TVING_SwiftUI;
-			productReference = F6C332292DE6FC9500B8A2D5 /* TVING_SwiftUI.app */;
+			productReference = F6C332402DE700EB00B8A2D5 /* TVING_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6C332212DE6FC9500B8A2D5 /* Project object */ = {
+		F6C332382DE700EB00B8A2D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					F6C332282DE6FC9500B8A2D5 = {
+					F6C3323F2DE700EB00B8A2D5 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
-			buildConfigurationList = F6C332242DE6FC9500B8A2D5 /* Build configuration list for PBXProject "TVING_SwiftUI" */;
+			buildConfigurationList = F6C3323B2DE700EB00B8A2D5 /* Build configuration list for PBXProject "TVING_SwiftUI" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = F6C332202DE6FC9500B8A2D5;
+			mainGroup = F6C332372DE700EB00B8A2D5;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F6C3322A2DE6FC9500B8A2D5 /* Products */;
+			productRefGroup = F6C332412DE700EB00B8A2D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6C332282DE6FC9500B8A2D5 /* TVING_SwiftUI */,
+				F6C3323F2DE700EB00B8A2D5 /* TVING_SwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F6C332272DE6FC9500B8A2D5 /* Resources */ = {
+		F6C3323E2DE700EB00B8A2D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C332522DE7023100B8A2D5 /* Assets.xcassets in Resources */,
+				F681333E2DEDD8350056DCBD /* Pretendard-Light.ttf in Resources */,
+				F681333F2DEDD8350056DCBD /* Pretendard-Black.ttf in Resources */,
+				F68133402DEDD8350056DCBD /* Pretendard-ExtraBold.ttf in Resources */,
+				F68133412DEDD8350056DCBD /* Pretendard-Regular.ttf in Resources */,
+				F68133422DEDD8350056DCBD /* Pretendard-Thin.ttf in Resources */,
+				F68133432DEDD8350056DCBD /* Pretendard-ExtraLight.ttf in Resources */,
+				F68133442DEDD8350056DCBD /* Pretendard-SemiBold.ttf in Resources */,
+				F68133452DEDD8350056DCBD /* Pretendard-Bold.ttf in Resources */,
+				F68133462DEDD8350056DCBD /* Pretendard-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F6C332252DE6FC9500B8A2D5 /* Sources */ = {
+		F6C3323C2DE700EB00B8A2D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68133512DEED9970056DCBD /* PopularMovieView.swift in Sources */,
+				F6C332532DE7023100B8A2D5 /* ContentView.swift in Sources */,
+				F681334B2DEED08E0056DCBD /* LiveModel.swift in Sources */,
+				F68133492DEEBFA60056DCBD /* Top20Model.swift in Sources */,
+				F6C332582DE70BC400B8A2D5 /* HeaderView.swift in Sources */,
+				F681334D2DEED5160056DCBD /* LiveView.swift in Sources */,
+				F68133592DEEF79A0056DCBD /* ServiceListView.swift in Sources */,
+				F68133532DEEDE200056DCBD /* TeamModel.swift in Sources */,
+				F68133572DEEF7100056DCBD /* ServiceModel.swift in Sources */,
+				F68133332DEDD4C40056DCBD /* Top20View.swift in Sources */,
+				F681335B2DEEF8DB0056DCBD /* Top6Model.swift in Sources */,
+				F681334F2DEED8E20056DCBD /* PopularMovieModel.swift in Sources */,
+				F6C332542DE7023100B8A2D5 /* TVING_SwiftUIApp.swift in Sources */,
+				F68133552DEEDF4A0056DCBD /* TeamListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F6C332322DE6FC9700B8A2D5 /* Debug */ = {
+		F6C332492DE700EE00B8A2D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		F6C332332DE6FC9700B8A2D5 /* Release */ = {
+		F6C3324A2DE700EE00B8A2D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +365,7 @@
 			};
 			name = Release;
 		};
-		F6C332352DE6FC9700B8A2D5 /* Debug */ = {
+		F6C3324C2DE700EE00B8A2D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -253,6 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TVING-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -271,7 +393,7 @@
 			};
 			name = Debug;
 		};
-		F6C332362DE6FC9700B8A2D5 /* Release */ = {
+		F6C3324D2DE700EE00B8A2D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -280,6 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TVING-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,25 +424,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6C332242DE6FC9500B8A2D5 /* Build configuration list for PBXProject "TVING_SwiftUI" */ = {
+		F6C3323B2DE700EB00B8A2D5 /* Build configuration list for PBXProject "TVING_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6C332322DE6FC9700B8A2D5 /* Debug */,
-				F6C332332DE6FC9700B8A2D5 /* Release */,
+				F6C332492DE700EE00B8A2D5 /* Debug */,
+				F6C3324A2DE700EE00B8A2D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6C332342DE6FC9700B8A2D5 /* Build configuration list for PBXNativeTarget "TVING_SwiftUI" */ = {
+		F6C3324B2DE700EE00B8A2D5 /* Build configuration list for PBXNativeTarget "TVING_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6C332352DE6FC9700B8A2D5 /* Debug */,
-				F6C332362DE6FC9700B8A2D5 /* Release */,
+				F6C3324C2DE700EE00B8A2D5 /* Debug */,
+				F6C3324D2DE700EE00B8A2D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6C332212DE6FC9500B8A2D5 /* Project object */;
+	rootObject = F6C332382DE700EB00B8A2D5 /* Project object */;
 }

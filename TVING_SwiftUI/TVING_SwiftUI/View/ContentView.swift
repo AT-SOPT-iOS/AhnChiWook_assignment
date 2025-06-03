@@ -16,6 +16,10 @@ struct ContentView: View {
                 Top20View()
                 LiveView()
                 PopularMovieView()
+                Spacer()
+                TeamListView()
+                Spacer()
+                ServiceListView()
             }
         }.background(Color.black)
     }

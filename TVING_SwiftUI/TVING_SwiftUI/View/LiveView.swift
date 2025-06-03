@@ -81,7 +81,3 @@ struct LiveView: View {
         .background(Color.black.edgesIgnoringSafeArea(.all))
     }
 }
-
-#Preview {
-    LiveView()
-}

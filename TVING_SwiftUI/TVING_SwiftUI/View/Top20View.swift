@@ -47,7 +47,3 @@ struct Top20View: View {
         .background(Color.black.edgesIgnoringSafeArea(.all))
     }
 }
-
-#Preview {
-    Top20View()
-}
