@@ -14,7 +14,6 @@ struct LiveCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            
             Image(item.imageName)
                 .resizable()
                 .scaledToFill()
@@ -46,7 +45,6 @@ struct LiveCell: View {
     }
 }
 
-// MARK: - LiveView (전체 섹션 뷰)
 struct LiveView: View {
     private let items = LiveModel.allSamples
     

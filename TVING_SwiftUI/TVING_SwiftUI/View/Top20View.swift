@@ -15,7 +15,7 @@ struct Top20View: View {
             HStack {
                 Text("오늘의 티빙 Top 20")
                     .foregroundColor(.white)
-                    .font(.custom("Pretendard-Bold", size: 24))
+                    .font(.custom("Pretendard-Bold", size: 15))
                 Spacer()
             }
             .padding(.horizontal, 16)

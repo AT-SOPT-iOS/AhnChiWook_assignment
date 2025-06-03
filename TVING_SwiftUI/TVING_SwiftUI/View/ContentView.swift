@@ -9,6 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+        ScrollView {
+            VStack(spacing: 0) {
+                HeaderView()
+                Image("image 19")
+                Top20View()
+                LiveView()
+                PopularMovieView()
+            }
+        }.background(Color.black)
     }
+}
+
+#Preview {
+    ContentView()
 }
