@@ -20,6 +20,8 @@ struct ContentView: View {
                 TeamListView()
                 Spacer()
                 ServiceListView()
+                Top6View()
+                BottomView()
             }
         }.background(Color.black)
     }

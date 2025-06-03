@@ -27,6 +27,8 @@
 		F68133572DEEF7100056DCBD /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133562DEEF7100056DCBD /* ServiceModel.swift */; };
 		F68133592DEEF79A0056DCBD /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68133582DEEF79A0056DCBD /* ServiceListView.swift */; };
 		F681335B2DEEF8DB0056DCBD /* Top6Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681335A2DEEF8D50056DCBD /* Top6Model.swift */; };
+		F681335D2DEEFA430056DCBD /* Top6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681335C2DEEFA430056DCBD /* Top6View.swift */; };
+		F681335F2DEEFB270056DCBD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F681335E2DEEFB270056DCBD /* BottomView.swift */; };
 		F6C332522DE7023100B8A2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C3324E2DE7023100B8A2D5 /* Assets.xcassets */; };
 		F6C332532DE7023100B8A2D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3324F2DE7023100B8A2D5 /* ContentView.swift */; };
 		F6C332542DE7023100B8A2D5 /* TVING_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C332502DE7023100B8A2D5 /* TVING_SwiftUIApp.swift */; };
@@ -55,6 +57,8 @@
 		F68133562DEEF7100056DCBD /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		F68133582DEEF79A0056DCBD /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
 		F681335A2DEEF8D50056DCBD /* Top6Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top6Model.swift; sourceTree = "<group>"; };
+		F681335C2DEEFA430056DCBD /* Top6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top6View.swift; sourceTree = "<group>"; };
+		F681335E2DEEFB270056DCBD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		F6C332402DE700EB00B8A2D5 /* TVING_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVING_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C3324E2DE7023100B8A2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6C3324F2DE7023100B8A2D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 		F6C332562DE7055B00B8A2D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F681335E2DEEFB270056DCBD /* BottomView.swift */,
+				F681335C2DEEFA430056DCBD /* Top6View.swift */,
 				F68133582DEEF79A0056DCBD /* ServiceListView.swift */,
 				F68133542DEEDF4A0056DCBD /* TeamListView.swift */,
 				F68133502DEED9970056DCBD /* PopularMovieView.swift */,
@@ -236,6 +242,8 @@
 				F68133532DEEDE200056DCBD /* TeamModel.swift in Sources */,
 				F68133572DEEF7100056DCBD /* ServiceModel.swift in Sources */,
 				F68133332DEDD4C40056DCBD /* Top20View.swift in Sources */,
+				F681335D2DEEFA430056DCBD /* Top6View.swift in Sources */,
+				F681335F2DEEFB270056DCBD /* BottomView.swift in Sources */,
 				F681335B2DEEF8DB0056DCBD /* Top6Model.swift in Sources */,
 				F681334F2DEED8E20056DCBD /* PopularMovieModel.swift in Sources */,
 				F6C332542DE7023100B8A2D5 /* TVING_SwiftUIApp.swift in Sources */,
